@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Register</title>
+      <link rel="stylesheet" href="./css/styles.css" />
+   </head>
+   <body>
+      <main>
+         <div class="signup-wrapper">
+            <div class="signup-form">
+               <h1>Sign Up</h1>
+               <form id="signup-form" method="post">
+                  <input type="text" name="username" placeholder="Username" required />
+                  <input type="email" name="email" placeholder="Email" required />
+                  <input
+                     type="password"
+                     name="password"
+                     placeholder="Password"
+                     required
+                  />
+                  <input
+                     type="password"
+                     name="confirmPassword"
+                     placeholder="Confirm Password"
+                     required
+                  />
+                  <div class="term-condition">
+                     <input type="checkbox" /><span
+                        >I agree all statements in Terms of service</span
+                     >
+                  </div>
+                  <button type="submit">Sign Up</button>
+                  <button type="button" id="signup-form-button" onclick="hide()">
+                     Already have an account ?
+                  </button>
+               </form>
+            </div>
+            <div class="signup-image">
+               <img src="./images/signup-image.jpg" alt="" />
+            </div>
+         </div>
+
+         <div class="signin-wrapper hide">
+            <div class="signin-image">
+               <img src="./images/signin-image.jpg" alt="" />
+            </div>
+            <div class="signin-form">
+               <h1>Sign In</h1>
+               <form id="signin-form" method="post">
+                  <input type="email" name="email" placeholder="Email" required />
+                  <input
+                     type="password"
+                     name="password"
+                     placeholder="Password"
+                     required
+                  />
+                  <button type="submit">Sign In</button>
+                  <button type="button" id="signin-form-button" onclick="hide()">
+                     Don't have an account ?
+                  </button>
+               </form>
+            </div>
+         </div>
+      </main>
+      <script src="./js/app.js"></script>
+   </body>
+</html>
